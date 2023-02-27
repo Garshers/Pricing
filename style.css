@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: 'SourceSansPro', sans-serif;
+    src:url(SourceSansPro-Regular.otf) format("truetype");
+    src:url(SourceSansPro-Semibold.otf) format("truetype");
+}
+
+    .main-frame{
+        height: 108px;
+        width: 244px;
+        margin: 120px auto 48px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-frame .title{
+        font-family: 'Source Sans Pro';
+        font-style:normal;
+        font-weight: 600;
+        font-size: 40px;
+        Line-height: 100%;
+        color: #14132B;
+        text-align: center;
+        letter-spacing: -0.03em;
+    }
+    .main-frame .content{
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        Font-size: 16px;
+        Line-height: 140%;
+        color: #989BB4;
+        text-align: center;
+        letter-spacing: -3%;
+    }
+    .content-frame{
+        height: 414px;
+        width: 69.7222%;
+        margin: 0px auto 120px;
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-start;
+    }
+    .content-frame .box{
+        height: 100%;
+        width: 32.2709%;
+        flex-direction: row;
+        border-radius: 24px;
+        border: 1px solid #E2E8EB;
+        position: relative;
+    }
+    .content-frame .box .module{
+        width: fit-content;
+        height: 24px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        Font-size: 24px;
+        Line-height: 24px;
+        Line-height: 100%;
+        margin: 32px auto 16px 10.2564%;
+        letter-spacing: -0.03em;
+    }
+    .content-frame .box .price{
+        width: 114px;
+        height: 42px;
+        margin: 0px auto 24px 10.2564%;
+        display: flex;
+        letter-spacing: -3%;
+        width: fit-content;
+    }
+    .content-frame .box .price .dolar-sign{
+        Font-family: 'Source Sans Pro';
+        Font-style: 'normal';
+        font-weight: 600;
+        Font-size: 16px;
+        Line-height: 16px;
+        Line-height: 100%;
+        align-self: flex-start;
+    }
+    .content-frame .box .price .cost{
+        Font-family: 'Source Sans Pro';
+        Font-style: 'normal';
+        font-weight: 600;
+        Font-size: 48px;
+        Line-height: 48px;
+        Line-height: 100%;
+        align-self: center;
+        letter-spacing: -0.03em;
+    }
+    .content-frame .box .price .period{
+        Font-family: 'Source Sans Pro';
+        Font-style: 'normal';
+        font-weight: 400;
+        Font-size: 16px;
+        Line-height: 16px;
+        Line-height: 100%;
+        Letter-spacing: -3%;
+        color: #989BB4;
+        align-self: flex-end;   
+    }
+    .content-frame .box .description{
+        width: 78.2051%;
+        margin: 0px 0px 10px 10.2564%;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: #989BB4;
+        height: fit-content;
+    }
+    .content-frame .box .pros{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        width: 78.2051%;
+        margin: 0px 10.2564% 8px 10.2564%;
+        height: fit-content;
+    }
+    .content-frame .box .pros .text{
+        height: 22px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #14132B;
+        letter-spacing: -0.01em;
+    }
+    .content-frame .box .get-started{
+        padding: 17px 32px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 79.4872%;
+        height: 48px;
+        background: #14132B;
+        border-radius: 16px;
+        border: 1px #E2E8EB;
+        text-decoration: none;
+        position: absolute;
+        bottom: 32px;
+        right: 10.2564%;
+    }
+    .content-frame .box .get-started:hover{
+        background-color: #393850;
+    }
+    .content-frame .box .get-started:active{
+        background-color:#060613;
+    }
+    .get-started2{
+        padding: 17px 32px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        width: 79.4872%;
+        height: 48px;
+        border-radius: 16px;
+        position: absolute;
+        bottom: 32px;
+        right: 10.2564%;
+        background: #7863F9;
+        text-decoration: none;
+    }
+    .content-frame .box .get-started2:hover{
+        background-color: #9180FF;
+    }
+    .content-frame .box .get-started2:active{
+        background-color:#6A53F4;
+    }
+    .start-text{
+        width: 66px;
+        height: 14px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;   
+    }
+    @media screen and (max-width: 1275px) {
+        .main-frame{
+            margin: 86px auto 48px;
+        }
+        .content-frame{
+            flex-direction: column;
+            height: 866px;
+            width: auto;
+            margin: 0px 80px 86px;
+        }
+        .content-frame .box{
+            width: 100%;
+            height: 32.2709%;
+            flex-direction: row;
+        }
+        .content-frame .box .module{
+            margin: 32px auto 16px 4.7477%;
+        }
+        .content-frame .box .price{
+            margin: 0px auto 24px 4.7477%;
+            flex: none;
+            position: absolute;
+            right: 32px;
+            top: 32px;
+        }
+        .content-frame .box .description{
+            margin: 0px 0px 10px 4.7477%;
+            width: 36.2018%;
+        }
+        .content-frame .box .pros{
+            margin: 0px 10.2564% 8px 4.7477%;
+            width: 46%;
+        }
+        .content-frame .box .get-started{
+            margin: auto;
+            width: 38.5757%;
+            right: 32px;
+            bottom: 32px; 
+        }
+        .content-frame .box .get-started2{
+            margin: auto;
+            width: 38.5757%;  
+            right: 32px;
+            bottom: 32px; 
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .main-frame{
+            margin-top: 72px;
+        }
+        .content-frame{
+            height: 1274px;
+            width: auto;
+            margin: 0px 24px 71px;
+        }
+        .content-frame .box{
+            width: 100%;
+            height: 32.2709%;
+        }
+        .content-frame .box .module{
+            margin-left: 9.7859%;
+        }
+        .content-frame .box .price{
+            position: initial;
+            margin-left: 9.7859%;
+        }
+        .content-frame .box .description{
+            margin: 0px 0px 8px 9.7859%;
+            width: 80.4282%;
+        }
+        .content-frame .box .pros{
+            margin: 0px 9.7859% 8px;
+            width: 80.4282%;
+        }
+        .content-frame .box .get-started{
+            right: 9.7859%;
+            width: 80.4281%;
+        }
+        .content-frame .box .get-started2{
+            right: 9.7859%;
+            width: 80.4281%;
+        }
+      }
